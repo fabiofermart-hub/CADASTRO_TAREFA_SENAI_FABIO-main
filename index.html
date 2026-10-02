@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Painel de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="cartao-aplicacao">
+
+        <header class="cabecalho-aplicacao">
+            <div>
+                <h1>Minhas Tarefas ✨</h1>
+                <p class="subtitulo">Organize seu dia com facilidade</p>
+            </div>
+            <button id="botao-tema" class="botao-icone" type="button" aria-label="Alternar Tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+
+        <div class="caixa-entrada">
+            <input type="text" id="campo-tarefa" placeholder="O que vamos fazer hoje?..." maxlength="60">
+            <button id="botao-adicionar" class="botao-principal" type="button">
+                <i class="fa-solid fa-plus"></i>
+                <span>Adicionar</span>
+            </button>
+        </div>
+
+        <div class="container-progresso">
+            <div class="info-progresso">
+                <span>Progresso</span>
+                <span id="texto-porcentagem">0%</span>
+            </div>
+            <div class="barra-fundo">
+                <div id="barra-progresso" class="barra-preenchimento"></div>
+            </div>
+        </div>
+
+        <div class="filtros-container">
+            <button class="filtro-btn ativo" data-filtro="todas">Todas</button>
+            <button class="filtro-btn" data-filtro="pendentes">Pendentes</button>
+            <button class="filtro-btn" data-filtro="concluidas">Concluídas</button>
+        </div>
+
+        <ul id="lista-tarefas" class="lista-tarefas"></ul>
+
+        <footer class="rodape-aplicacao">
+            <span id="contador-tarefas">0 tarefas na lista</span>
+            <button id="btn-limpar-concluidas" class="btn-limpar" type="button">Limpar concluídas</button>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
