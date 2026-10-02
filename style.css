@@ -160,7 +160,6 @@ body {
     transition: width 0.3s ease;
 }
 
-/* Filtros */
 .filtros-container {
     display: flex;
     gap: 8px;
@@ -189,7 +188,6 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Lista */
 .lista-tarefas {
     list-style: none;
     max-height: 280px;
